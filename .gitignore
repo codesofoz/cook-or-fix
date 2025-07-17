@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# Environment files
+.env.local
+.env*.local
+
+# Metro bundler cache
+.cache/
+.metro-health-check*
+
+# Native files
+android/
+ios/
+.kotlin/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS system files
+.DS_Store
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+# Patch/orig files
+*.orig.*
