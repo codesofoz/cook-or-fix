@@ -1,12 +1,20 @@
-import { Text, TouchableOpacity } from 'react-native';
+import { Pressable, Text } from 'react-native';
+import { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
-export default function Button({ label, onPress }: { label: string; onPress: () => void }) {
+type ButtonProps = {
+  children: ReactNode;
+  onPress: () => void;
+  className?: string;
+};
+
+export const Button = ({ children, onPress, className }: ButtonProps) => {
   return (
-    <TouchableOpacity
+    <Pressable
       onPress={onPress}
-      className="bg-indigo-600 py-3 px-6 rounded-lg shadow-lg"
+      className={cn('bg-blue-500 p-4 rounded-xl', className)}
     >
-      <Text className="text-white font-semibold text-center">{label}</Text>
-    </TouchableOpacity>
+      <Text className="text-white text-center font-semibold">{children}</Text>
+    </Pressable>
   );
-}
+};

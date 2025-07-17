@@ -4,14 +4,18 @@
     "module": "ESNext",
     "jsx": "react-native",
     "strict": true,
-    "moduleResolution": "bundler", 
+    "moduleResolution": "bundler",
     "customConditions": ["react-native"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "types": ["expo", "nativewind/types"]
+    "types": ["expo", "nativewind/types"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "extends": "expo/tsconfig.base",
   "exclude": ["node_modules"]
