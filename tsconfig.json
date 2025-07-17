@@ -11,7 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "types": ["expo"]
+    "types": ["expo", "nativewind/types"]
   },
   "extends": "expo/tsconfig.base",
   "exclude": ["node_modules"]
